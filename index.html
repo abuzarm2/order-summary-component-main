@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          spacing: {
+            '128': '32rem', // Add a custom spacing utility with 128 units (32rem)
+          },
+          colors: {
+            Very_pale_blue: 'hsl(225, 100%, 98%)',
+            Desaturated_blue: 'hsl(224, 23%, 55%)',
+            Dark_blue: 'hsl(223, 47%, 23%)',
+            Pale_blue: 'hsl(225, 100%, 94%)',
+            Bright_blue: 'hsl(245, 75%, 52%)'
+          },
+        },
+      },
+      variants: {},
+      plugins: [],
+    }
+    
+  </script>
+</head>
+<body>
+  <!-- outer container -->
+  <div class="flex items-center justify-center min-h-screen bg-Pale_blue">
+    <!-- Flex container -->
+    <div class="rounded-3xl flex flex-col mx-40 bg-white my-10 lg:mx-128">
+      <img src="./images/illustration-hero.svg" alt="" class="rounded-t-3xl ">
+      <h2 class="text-center font-bold text-xl my-5">Order Summary</h2>
+      <p class="text-center text-Desaturated_blue font-2 mx-6">
+        You can now listen to millions of songs, audiobooks, and podcasts on any 
+      device anywhere you like!
+      </p>
+      <div class="flex flex-row bg-Very_pale_blue rounded-xl m-6">
+        <img src="./images/icon-music.svg" alt="" class="p-4">
+        <div class="mx-auto">
+          <p class="font-bold mt-2">Annual plan</p>
+          <p class="text-Desaturated_blue">$59.99/year</p>
+        </div>
+        <a href="" class="text-Bright_blue font-bold underline m-auto hover:no-underline">Change</a>
+      </div>
+      <button class="bg-Bright_blue text-white mx-6 mb-4 rounded-xl p-4 font-bold hover:bg-opacity-50">Proceed to Payment</button>
+      <a href="" class="text-center text-Desaturated_blue text-xl font-medium m-2 mb-6 hover:font-bold hover:text-black">Cancel Order</a>
+
+      <!-- <div class="bg-Very_pale_blue">
+        hello
+      </div>
+      <div class="bg-Desaturated_blue">
+        hello
+      </div>
+      <div class="bg-Dark_blue">
+        hello
+      </div>
+      <div class="bg-Pale_blue">
+        hello
+      </div>
+      <div class="bg-Bright_blue">
+        hello
+      </div> -->
+    </div>
+  </div>
+
+</body>
+</html>
